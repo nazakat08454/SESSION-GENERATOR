@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pair.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "qr.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "itxxwasi.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/pair", "dest": "/pair.js" },
+    { "src": "/qr", "dest": "/qr.js" },
+    { "src": "/(.*)", "dest": "/itxxwasi.js" }
+  ]
+}
